@@ -6,6 +6,9 @@
    display: block !important;
    width: 100% !important;
   }
+  div.wrapper div.container div.gridWrapper div.nf-videos div.sectionWrapper ul.nf-videos.videos.search-video-thumbs dbicd.alpha {
+    display: none !important;
+  }
 }
 /*
  div#react-root div.css-1dbjc4n.r-13awgt0.r-12vffkv div.css-1dbjc4n.r-13awgt0.r-12vffkv div.css-1dbjc4n.r-18u37iz.r-13qz1uu.r-417010 main.css-1dbjc4n.r-1habvwh.r-16y2uox.r-1wbh5a2 div.css-1dbjc4n.r-150rngu.r-16y2uox.r-1wbh5a2.r-rthrr5 div.css-1dbjc4n.r-aqfbo4.r-16y2uox div.css-1dbjc4n.r-1oszu61.r-1niwhzg.r-18u37iz.r-16y2uox.r-1wtj0ep.r-2llsf.r-13qz1uu div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz {
