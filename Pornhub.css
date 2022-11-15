@@ -1,5 +1,4 @@
-@document domain("pornhub.com")
-{
+@-moz-document regexp('^https?://(www\.)?pornhub\.com(/.*)?$') {
   h1 {
     color: green;
   }
