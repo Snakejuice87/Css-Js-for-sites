@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name          Run Loop unmute & autoplay
+// @name          Run Loop unmute autoplay & contols
 // @namespace     http://userstyles.org
 // @description	  My javascript injection
 // @author        Snakejuice
@@ -15,7 +15,7 @@ for (var video of videos) {
     video.loop = true;
     video.muted = false;
     video.autoplay = true;
-   video controls = true;
+   video.controls = true;
    }
    completion(videos.length);
 })();
