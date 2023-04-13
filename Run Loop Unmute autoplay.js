@@ -15,7 +15,7 @@ for (var video of videos) {
     video.loop = true;
     video.muted = false;
     video.autoplay = true;
-    video.controls = true;
+   video controls = true;
    }
    completion(videos.length);
 })();
