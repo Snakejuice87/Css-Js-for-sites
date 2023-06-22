@@ -60,9 +60,8 @@ var sites = [
         page    :   "/post/show/",
         query   :   function(tags, images, page, postid) {
                         return (postid ? postid : "?tags=" + tags + "&limit=" + images + "&page=" + page);
-                    }
-    }
-    /*
+        }
+    },
     {
         name    :   "chan.Sankakucomplex.com",
         site    :   "chan\.sankakucomplex\.com",
@@ -71,9 +70,20 @@ var sites = [
         list    :   "/index.php?page=post&s=list",
         page    :   "/index.php?page=post&s=view&id=",
         query   :   function(tags, images, page, postid) {
-                        return (postid ? postid : "&tags=" + tags + "&limit=" + images + "&pid=" + (page - 1));
+                        return (postid ? postid : "&tags=" + tags + "&limit=" + images + "&page=" + (page - 1));
                 }
-    }*/
+    },
+    {
+        name    :   "chan.Sankakucomplex.com",
+        site    :   "chan\.sankakucomplex\.com",
+        post    :   "/index.php?page=dapi&s=post&q=index",
+        note    :   "/index.php?page=dapi&s=note&q=index&post_id=",
+        list    :   "/index.php?page=post&s=list",
+        page    :   "/index.php?page=post&s=view&id=",
+        query   :   function(tags, images, page, postid) {
+                        return (postid ? postid : "&tags=" + tags + "&limit=" + images + "&page=" + (page - 1));
+                }
+    }
 ];
 
 // CONSTANTS
@@ -494,7 +504,7 @@ display.addEventListener("click", function(e) {
     overlay.style.setProperty("display", "none", "");
     display.style.setProperty("display", "none", "");
     while(innerDisplay.hasChildNodes())
-        innerDisplay.removeChild(innerDisplay.firstChild);
+        innerDisplay.addChild(innerDisplay.firstChild);
 }, false);
 
 display.addEventListener("dblclick", function(e) {
