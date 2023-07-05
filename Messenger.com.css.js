@@ -1,5 +1,43 @@
-@document domain("")
-{
+// ==UserScript==
+// @name           Messenger.com.css.js
+// @match      *messenger.com/*
+// @include      *messenger.com/*
+// @include      *://*.messenger.com/*
+// @include      *facebook.com/messages/*
+// @include      *://*.facebook.com/messages/*
+// @match     *://*.facebook.com/messages/*
+// @match      *://*.messenger.com/*
+// @author         Snakejuice
+// @description    A simple Messenger css.
+// @version        4.6692016
+// @grant          GM_deleteValue
+// ==/UserScript==
+
+
+(function () {
+    'use strict';
+        var node = document.querySelectorAll("div.x1i10hfl x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1heor9g xt0b8zv xacajkf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1nn3v0j x4uap5 x1120s5i xkhd6sd");
+        node.setAttribute("style","background-color: inherit !important;");
+        document.body.appendChild(node);
+}
+
+
+(function () {
+    'use strict';
+        var node = document.getElementbyClass("span.SVGInline.ic.ic-sound");
+        node.setAttribute("style","z-index: 999999;");
+        document.body.appendChild(node);
+}
+
+(function addStyle() {
+    // 
+While <head> is not loaded we keep trying
+    if (!document.querySelector("head")) {
+        return setTimeout(addStyle, 50);
+    }
+
+    // We create an object and start including its content to include in DOM at the end 
+    var ephcss = "
 ._6aun {
   display: block;
   margin: 0 auto;
@@ -989,7 +1027,7 @@
 #root.maxwidth {
   max-width: none;
 }
-@font-face {
+// @font-face {
   font-family: "Calibre";
   font-style: normal;
   font-weight: 400;
@@ -998,7 +1036,7 @@
     url(/rsrc.php/yT/r/HWVCvIuXDLN.woff2) format("woff2"),
     url(/rsrc.php/y8/r/o_VEjme4ECF.woff) format("woff");
 }
-@font-face {
+// @font-face {
   font-family: "Calibre";
   font-style: normal;
   font-weight: 500;
@@ -1007,7 +1045,7 @@
     url(/rsrc.php/yN/r/rauSA04huJL.woff2) format("woff2"),
     url(/rsrc.php/yO/r/ZlXNQ9ODdGe.woff) format("woff");
 }
-@font-face {
+// @font-face {
   font-family: "Calibre";
   font-style: normal;
   font-weight: 600;
@@ -2005,7 +2043,7 @@
 #root.maxwidth {
   max-width: none;
 }
-@font-face {
+// @font-face {
   font-family: "Calibre";
   font-style: normal;
   font-weight: 400;
@@ -2014,7 +2052,7 @@
     url(/rsrc.php/yT/r/HWVCvIuXDLN.woff2) format("woff2"),
     url(/rsrc.php/y8/r/o_VEjme4ECF.woff) format("woff");
 }
-@font-face {
+// @font-face {
   font-family: "Calibre";
   font-style: normal;
   font-weight: 500;
@@ -2023,7 +2061,7 @@
     url(/rsrc.php/yN/r/rauSA04huJL.woff2) format("woff2"),
     url(/rsrc.php/yO/r/ZlXNQ9ODdGe.woff) format("woff");
 }
-@font-face {
+// @font-face {
   font-family: "Calibre";
   font-style: normal;
   font-weight: 600;
@@ -2085,7 +2123,33 @@
 .bootloader_TRvm2pn {
   display: block !important;
 }
-
-._4n9r{box-sizing:border-box;height:100px;padding:0 30px;padding-right:calc(env(safe-area-inset-right, '0px') * 2 + 30px);position:absolute;width:100%;z-index:2}._6a88{position:fixed;top:0}._4n9r ._1-kh{height:40px;width:40px}._4n9r ._93s2,._93s3 ._4n9r ._1-kh{display:none}._93s4 ._4n9r:not(._6a88):not(._8otd) ._93s2,._93s5 ._4n9r ._93s6,._93s3 ._4n9r._6a88 ._93s6{display:block}._1-l5{align-items:center;box-sizing:border-box;clear:both;display:flex;height:100px;justify-content:space-between;margin:0 auto;max-width:1020px;overflow:auto}._9gip ._1-l5{max-width:1195px}._1-l6{background-clip:padding-box;background-color:rgba(255,255,255,.98);border-bottom:1px solid rgba(0,0,0,.1);height:100%;left:0;opacity:0;position:absolute;top:0;width:100%}._1-l5{position:relative}._4n9r ._4vo5{color:rgba(0, 0, 0, .55);font-family:Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;font-size:17px;font-weight:500;line-height:50px;margin:0 15px;transition:opacity .2s ease-in}._9gip ._4n9r ._4vo5{color:rgba(0, 0, 0, 1)}._928s ._4n9r ._4vo5{font-family:Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif}._8nnf ._4n9r:not(._6a88) ._4vo5,._93s7 ._4n9r:not(._6a88) ._4vo5{color:#fff}._93sa ._4n9r:not(._6a88) ._4vo5{color:#0084ff}._4n9r ._2fv3 ._4vo5,._4n9r ._4vo5:hover{color:#000;position:relative}._4n9r ._2fv3 ._4vo5:after,._4n9r ._4vo5:hover:after{background-color:#000;border-radius:1.5px;bottom:-6px;content:'';height:3px;left:0;position:absolute;width:100%}._9gip ._4n9r ._2fv3 ._4vo5:after,._9gip ._4n9r ._4vo5:hover:after{background-color:#0a7cff}._8nnf ._4n9r ._2fv3 ._4vo5:after,._8nnf ._4n9r ._4vo5:hover:after,._93s7 ._4n9r ._2fv3 ._4vo5:after,._93s7 ._4n9r ._4vo5:hover:after{background-color:#fff}._93sa ._4n9r ._2fv3 ._4vo5:after,._93sa ._4n9r ._4vo5:hover:after
-}
-}
+._4n9r{box-sizing:border-box;height:100px;padding:0 30px;padding-right:calc(env(safe-area-inset-right, '0px') * 2 + 30px);position:absolute;width:100%;z-index:2}._6a88{position:fixed;top:0}._4n9r ._1-kh{height:40px;width:40px}._4n9r ._93s2,._93s3 ._4n9r ._1-kh{display:none}._93s4 ._4n9r:not(._6a88):not(._8otd) ._93s2,._93s5 ._4n9r ._93s6,._93s3 ._4n9r._6a88 ._93s6{display:block}._1-l5{align-items:center;box-sizing:border-box;clear:both;display:flex;height:100px;justify-content:space-between;margin:0 auto;max-width:1020px;overflow:auto}._9gip ._1-l5{max-width:1195px}._1-l6{background-clip:padding-box;background-color:rgba(255,255,255,.98);border-bottom:1px solid rgba(0,0,0,.1);height:100%;left:0;opacity:0;position:absolute;top:0;width:100%}._1-l5{position:relative}._4n9r ._4vo5{color:rgba(0, 0, 0, .55);font-family:Calibre, Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif;font-size:17px;font-weight:500;line-height:50px;margin:0 15px;transition:opacity .2s ease-in}._9gip ._4n9r ._4vo5{color:rgba(0, 0, 0, 1)}._928s ._4n9r ._4vo5{font-family:Helvetica Neue, Segoe UI, Helvetica, Arial, Lucida Grande, sans-serif}._8nnf ._4n9r:not(._6a88) ._4vo5,._93s7 ._4n9r:not(._6a88) ._4vo5{color:#fff}._93sa ._4n9r:not(._6a88) ._4vo5{color:#0084ff}._4n9r ._2fv3 ._4vo5,._4n9r ._4vo5:hover{color:#000;position:relative}._4n9r ._2fv3 ._4vo5:after,._4n9r ._4vo5:hover:after{background-color:#000;border-radius:1.5px;bottom:-6px;content:'';height:3px;left:0;position:absolute;width:100%}._9gip ._4n9r ._2fv3 ._4vo5:after,._9gip ._4n9r ._4vo5:hover:after{background-color:#0a7cff}._8nnf ._4n9r ._2fv3 ._4vo5:after,._8nnf ._4n9r ._4vo5:hover:after,._93s7 ._4n9r ._2fv3 ._4vo5:after,._93s7 ._4n9r ._4vo5:hover:after{background-color:#fff}._93sa ._4n9r ._2fv3 ._4vo5:after,._93sa ._4n9r ._4vo5:hover:after}" +
+    // Hide ads while we can't remove them
+     "iframespan.SVGInline.ic.ic-sound {" +
+        "z-index: 99999 !important;" +
+        "}" +
+    // Gifs page
+    ".gifsWrapper ul.gifs li.first {" +
+        "margin-right: 12px !important;" +
+        "margin-top: 0 !important;" +
+        "height: 353px !important;" +
+        "margin-bottom: 12px !important;" +
+    "}" +
+    "@media only screen and (min-width: 1350px) {" +
+        ".gifsWrapper ul.gifs li.first {" +
+            "height: 381px !important;" +
+        "}" +
+        ".gifsWrapper ul.gifs li:nth-child(8) {" +
+            "display: none !important;" +
+        "}" +
+    "}" +
+    ".gifColumnLeft.float-left {" +
+        "width: 100% !important;" +  
+        ")";
+    // Inject created CSS
+    var ephnode = document.createElement("style");
+    ephnode.type = "text/css";
+    ephnode.id = "EPH-style";
+    ephnode.appendChild(document.createTextNode(ephcss));
+    document.head.appendChild(ephnode);
+}());
