@@ -1,43 +1,31 @@
-// ==UserScript==
-// @name           Messenger.com.css.js
-// @match      *messenger.com/*
-// @include      *messenger.com/*
-// @include      *://*.messenger.com/*
-// @include      *facebook.com/messages/*
-// @include      *://*.facebook.com/messages/*
-// @match     *://*.facebook.com/messages/*
-// @match      *://*.messenger.com/*
-// @author         Snakejuice
-// @description    A simple Messenger css.
-// @version        4.6692016
-// @grant          GM_deleteValue
-// ==/UserScript==
+/* ==UserStyle==
+@name           Messenger.com.css.js
+@description  Changes the css style for Facebook and Messenger
+@namespace  https://github.com/Snakejuice87/Css-Js-for-sites/main/Messenger.com.css.js
+@update     https://raw.githubusercontent.com/Snakejuice87/Css-Js-for-sites/scripts/main/Messenger.com.css.js
+@include      *messenger.com/*
+@include      *://*.messenger.com/*
+@include      *facebook.com/messages/*
+@include      *://*.facebook.com/messages/*
+@match        *://*.facebook.com/messages/*
+@match        *://*.messenger.com/*
+@author         Snakejuice
+@version        4.6692016
+@grant          none
+==/UserStyle== */
 
 
-(function () {
-    'use strict';
-        var node = document.querySelectorAll("div.x1i10hfl x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1heor9g xt0b8zv xacajkf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1nn3v0j x4uap5 x1120s5i xkhd6sd");
-        node.setAttribute("style","background-color: inherit !important;");
-        document.body.appendChild(node);
+@-moz-document regexp('^https?://(www\.)?instagram\.com(/.*)?$') {
+    note ?= 'Switching @updateURL to https://userstyles.world platform!\A\A'
+    note += '🌚 Dark-Instagram v2.9.1'
+
+    div.x1i10hfl x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz x1heor9g xt0b8zv xacajkf x1lcm9me x1yr5g0i xrt01vj x10y3i5r x1nn3v0j x4uap5 x1120s5i xkhd6sd { background-color: inherit !important; }
 }
 
 
-(function () {
-    'use strict';
-        var node = document.getElementbyClass("span.SVGInline.ic.ic-sound");
-        node.setAttribute("style","z-index: 999999;");
-        document.body.appendChild(node);
+span.SVGInline.ic.ic-sound {
+     z-index: 999999;
 }
-
-(function addStyle() {
-    // 
-While <head> is not loaded we keep trying
-    if (!document.querySelector("head")) {
-        return setTimeout(addStyle, 50);
-    }
-
-    // We create an object and start including its content to include in DOM at the end 
-    var ephcss = "
 ._6aun {
   display: block;
   margin: 0 auto;
@@ -2144,12 +2132,4 @@ While <head> is not loaded we keep trying
         "}" +
     "}" +
     ".gifColumnLeft.float-left {" +
-        "width: 100% !important;" +  
-        ")";
-    // Inject created CSS
-    var ephnode = document.createElement("style");
-    ephnode.type = "text/css";
-    ephnode.id = "EPH-style";
-    ephnode.appendChild(document.createTextNode(ephcss));
-    document.head.appendChild(ephnode);
-}());
+        "width: 100% !important;
