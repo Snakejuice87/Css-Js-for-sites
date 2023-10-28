@@ -4,6 +4,7 @@
 // @description	  My javascript injection
 // @author        Snakejuice
 // @include       *.*
+// @match        *
 // @run-at      document-start
 // @version       1.0
 // ==/UserScript==
