@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name          Gogoanime ccs
 // @description    custom link css style 
-// @include        https://Anitaku.to*
-// @include      *Anitaku.to/*
-// @match      Anitaku.to
+// @include        https://Anitaku.**
+// @include      *Anitaku.*/*
+// @match      Anitaku.*
 // @run-at         document-start
 // @version       1.0
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js
