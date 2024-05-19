@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           chan.sankakucomplex Stylus
+@author         Snakejuice
+@description    `A simple css.`
+@version        1.0
+==/UserStyle== */
+
+@-moz-document url("https://chan.sankakucomplex.com/"),
+          regexp("http://chan.sankakucomplex.com/*/"),
+          regexp("http://chan.sankakucomplex.com/*/*/"),
+          domain("https://chan.sankakucomplex.com") {
+@css {
+
+.has-mail,
+#has-mail-notice {
+    width: 0px;
+    height: 0px;
+    display: none !important;
+}
+#news-ticker {
+    width: 0px;
+    height: 0px;
+    display: none !important;
+}
+#draggableElement,
+.companion--draggable_element {
+    z-index: 0 !important;
+    display: none !important;
+    height: 0px !important;
+    width: 0px !important;
+}
+}
+}
